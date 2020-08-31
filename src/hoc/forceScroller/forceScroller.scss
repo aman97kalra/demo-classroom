@@ -1,0 +1,14 @@
+.ui-force-scroller-container {
+
+    position: relative;
+    &-left-arrow {
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    &-right-arrow {
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+}
