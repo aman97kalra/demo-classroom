@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import './button.scss';
 
 export const Button = ( props ) => {
+    console.log( 'buttonproips', props );
     
     /* If there is no second class in ternary operator ( ? : ) then use AND operator */
     const buttonClasses = classnames( 'view-generic-button', props.className,
@@ -19,6 +20,7 @@ export const Button = ( props ) => {
     return (
         <button
             className={ buttonClasses }
+            onClick = { props.onClick }
         >
         {
             <div className={ 'xx'} >
