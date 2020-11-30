@@ -1,6 +1,6 @@
 # Corona Tracker 
 
-It is a web app to track world-wide covid-19 cases with data from [Covid19 API](https://api.covid19api.com/summary)
+A web app built using ReactJs to track world-wide covid-19 cases with data from [Covid19 API](https://api.covid19api.com/summary)
 
 ![Screenshot 1](src/images/coronaTracker.png?raw=true "Corona Tracker Image")
 
