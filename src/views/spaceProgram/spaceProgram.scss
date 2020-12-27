@@ -1,0 +1,141 @@
+.ui-space-program-view {
+    background-color: #F0EEED;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        &__filters {
+            max-width: 20%;
+            margin: 25px;
+            // flex: 1;
+            background-color: white;
+            // height: 900px;
+            height: 100vh;
+            overflow: auto;
+            max-height: 1200px;
+            &__title {
+                // text-align: left;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &__label {
+                text-decoration: underline;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            &__year {
+                &__values {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    button {
+                        &:nth-child( odd ) {
+                            margin-right: 25px;
+                        }
+                        &:nth-child( even ) {
+                            margin-left: 25px;
+                        }
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+        &__cards {
+            background-color: #F0EEED;
+            width: 80%;
+            height: 100vh;
+            overflow: auto;
+            // flex: 2;
+            display: flex;
+            margin: 15px;
+            flex-wrap: wrap;
+            &__no-data-found {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex: 1 1 auto;
+        background-color: #F0EEED;
+        &__title {
+            font-weight: bold;
+            margin: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .ui-space-program-view {
+        flex-direction: column;
+        &__content {
+            flex-direction: column;
+            &__filters {
+                width: 90%;
+                max-width: 90%;
+                height: auto;
+                max-height: 1000px;
+                margin: 20px;
+                &__year {
+                    &__values {
+                        justify-content: center;
+                        align-items: center;
+                        button {
+                            width: 100px;
+                            margin: 20px;
+                        }
+                    }
+                }
+            }
+            &__cards {
+                width: 90%;
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) and ( min-width: 700px) {
+    .ui-space-program-view {
+        &__content {
+            &__filters {
+                width: 30%;
+                max-width: 35%;
+                // &__year {
+                //     &__values {
+                //         justify-content: center;
+                //         align-items: center;
+                //         button {
+                //             width: 100px;
+                //             margin: 20px;
+                //         }
+                //     }
+                // }
+            }
+            &__cards {
+                width: 70%;
+                justify-content: space-around;
+            }
+        }
+    }
+}

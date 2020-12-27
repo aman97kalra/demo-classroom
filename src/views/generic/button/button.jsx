@@ -9,6 +9,7 @@ export const Button = ( props ) => {
         props.size && `view-generic-button--${props.size}`,
         props.color && `view-generic-button--${props.color}`,
         props.disabled && 'view-generic-button--disabled',
+        props.isActive && 'view-generic-button--active'
     );
 
     const labelClasses = classnames( 'view-generic-button__label', props.labelClass,
@@ -19,6 +20,8 @@ export const Button = ( props ) => {
     return (
         <button
             className={ buttonClasses }
+            onClick = { props.onClick }
+            style = { { backgroundColor: props.color }}
         >
         {
             <div className={ 'xx'} >

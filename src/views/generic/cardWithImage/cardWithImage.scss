@@ -1,0 +1,36 @@
+.ui-card-with-image {
+    width: 230px;
+    height: 420px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    &__content {
+        &__title {
+            font-weight: bold;
+            color: blue;
+            margin: 20px;
+        }
+        &__items {
+            &__item {
+                display: flex;
+                // justify-content: space-between;
+                &__label {
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ui-card-with-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
