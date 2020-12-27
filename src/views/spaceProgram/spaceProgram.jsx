@@ -50,6 +50,7 @@ export const SpaceProgram = ( props ) => {
                             })
                         }
                 </div>
+
                 {/* <div className = 'ui-space-program-view__filters__successful-launch'>
                     <p className = 'ui-space-program-view__filters__successful-launch__label'> Successful Launch </p>
                     <button onClick = { () => { handleLaunchFilter( true ) } }> { 'True'} </button>
@@ -60,6 +61,7 @@ export const SpaceProgram = ( props ) => {
                     <button onClick = { () => { handleLandingFilter( true ) } }> { 'True'} </button>
                     <button onClick = { () => { handleLandingFilter( false ) } }> { 'False' } </button>
                 </div> */}
+                
             {
                 loading ? <p> Loading Content</p>:
                 <div className = 'ui-space-program-view__content__cards'> 
